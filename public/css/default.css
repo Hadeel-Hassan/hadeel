@@ -14,7 +14,7 @@ c. Default Styles
    3. Links
    4. Images
    5. Buttons
-   6. Forms
+   6. s
 d. Grid
 e. Others
    1. Clearing
@@ -180,7 +180,7 @@ p.lead {
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
-em { font: 15px/30px 'opensans-italic', sans-serif; }
+em { font: 13px/30px 'opensans-italic', sans-serif; }
 strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
 small { font-size: 11px; line-height: inherit; }
 
@@ -526,7 +526,7 @@ input::-moz-focus-inner {
 
 /*  7. Forms  --------------------------------------------------------- */
 
-form { margin-bottom: 24px; }
+form { margin-bottom: 24px; margin-top: 20px; }
 fieldset { margin-bottom: 24px; }
 
 input[type="text"],
@@ -534,8 +534,9 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
+   font: 16px/24px 'opensans-regular', sans-serif;
    display: block;
-   padding: 18px 15px;
+   padding: 0px 15px;
    margin: 0 0 24px 0;
    border: 0;
    outline: none;
@@ -566,6 +567,7 @@ textarea { min-height: 220px; }
 label,
 legend {
    font: 16px/24px 'opensans-bold', sans-serif;
+   
 	margin: 12px 0;
    color: #3d4145;
    display: block;
@@ -700,9 +702,41 @@ properly.
 .first { clear: left; }   /* first column in default screen */
 .s-first { clear: none; } /* first column in smaller screens */
 
+/* Custom Screens CSS */
+@media only screen and (max-width: 700px){
+   /* Header */
+   .header-btn {
+      display:block;
+      width: 70%;
+      height: 10%;
+      margin-left: 15% !important;
+   }
+
+   /* Resume */
+   .timeline {
+      margin-left: -10%;
+      margin-top: 20%;
+   }
+   .info {
+      text-align: left !important;
+   }
+   .duration {
+      margin-right: -50% !important;
+      margin-top: -15% !important;
+   }
+   .timeline-item{
+      margin-bottom: 50px !important;
+   }
+
+   /* Contact */
+   .contact-msg {
+      margin-bottom: 20% !important;
+   }
+}
+
 /* smaller screens
 --------------------------------------------------------------- */
-@media only screen and (max-width: 900px) {
+@media only scrceen and (max-width: 900px) {
 
    /* block grids on small screens */
    .s-bgrid-sixths [class*="column"]   { width: 16.66667%; }

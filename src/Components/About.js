@@ -1,60 +1,54 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
+import Avatar from '@material-ui/core/Avatar';
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
     const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
     const resumeDownload = this.props.data.resumedownload;
 
     return (
       <section id="about">
-        <Fade duration={1000}>
+        <Fade top duration={1000}>
           <div className="row">
-            <div className="three columns">
+            <div className="five columns">
               <img
                 className="profile-pic"
                 src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                alt="Profile Pic"
               />
             </div>
-            <div className="nine columns main-col">
-              <h2>About Me</h2>
+            <div className="seven columns main-col">
+              <h1><span>About Me</span></h1>
 
               <p>{bio}</p>
-              <div className="row">
-                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
-                      {street}
-                      <br />
-                      {city} {state}, {zip}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                  </p>
-                </div>
-                <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                  </p>
-                </div>
+              <p>Check out my earned certificates by clicking on it:</p>
+              <div className="columns download">
+                <ul className="row">
+                  <a href="https://confirm.udacity.com/JA35U66C" target="_blank">
+                    <Avatar alt="comptia security+" src="images/udacity.png" className="badges" />
+                  </a>
+                  <a href="https://confirm.udacity.com/CHVDVADJ" target="_blank">
+                    <Avatar alt="comptia security+" src="images/udacity.png" className="badges" />
+                  </a>
+                  <a href="https://www.credly.com/badges/839a4d68-9f58-4621-8e19-1e137a621a69/public_url" target="_blank">
+                    <Avatar alt="comptia security+" src="images/security.png" className="badges" />
+                  </a>
+                  <a href="https://www.credly.com/badges/9242206b-c061-488b-9601-a53b0f3b4c34/public_url" target="_blank">
+                    <Avatar alt="comptia cysa+" src="images/cysa.png" className="badges" />
+                  </a>
+                  <a href="https://www.credly.com/badges/6743988f-d569-4fa1-bc69-50d77fa7eb05/public_url" target="_blank">
+                    <Avatar alt="comptia pentest+" src="images/pentest.png" className="badges" />
+                  </a>
+                </ul>
+                <p>
+                  <a href={resumeDownload} target="_blank" className="button row">
+                    <i className="fa fa-download"></i>Download Resume
+                  </a>
+                </p>
               </div>
             </div>
           </div>

@@ -6,14 +6,15 @@ class Header extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const project = this.props.data.project;
+    const email = this.props.data.email;
+    const linkedin = this.props.data.linkedin;
     const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="cobweb" bg={true} color="#0693E3" num={200} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -43,12 +44,6 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#portfolio">
-                Works
-              </a>
-            </li>
-
-            <li>
               <a className="smoothscroll" href="#contact">
                 Contact
               </a>
@@ -67,10 +62,13 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
+                <a href={"mailto:" + email + "?subject=Email to Hadeel Baabdullah"} className="button btn header-btn" target="_blank">
+                  <i className="fa fa-envelope"></i>Email
                 </a>
-                <a href={github} className="button btn github-btn">
+                <a href={linkedin} className="button btn header-btn" target="_blank">
+                  <i className="fa fa-linkedin"></i>LinkedIn Profile
+                </a>
+                <a href={github} className="button btn header-btn" target="_blank">
                   <i className="fa fa-github"></i>Github
                 </a>
               </ul>
