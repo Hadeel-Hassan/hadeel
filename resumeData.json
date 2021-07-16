@@ -1,0 +1,109 @@
+{
+  "main": {
+    "name":"Hadeel Baabdullah",
+    "description":"This website examines my resume, which details my technical background, skills, and contact information",
+    "image":"programmer.png",
+    "bio":"I am a fresh graduate with a bachelor's degree in computer science from King Abdulaziz University in Jeddah, Saudi Arabia. I am a recent graduate, therefore I am passionate about continuous learning and skills development. I am interested in Software Engineering and CyberSecurity.",
+    "contactmessage":"Contact Information",
+    "email": "hadeel.has97@gmail.com",
+    "location": "Jeddah, Saudi Arabia",
+    "github":"https://github.com/Hadeel-Hassan",
+    "linkedin":"https://www.linkedin.com/in/hadeel-baabdullah/",
+    "nationality":"Saudi",
+    "birth_date": "13/05/1997 (24 years old)",
+    "resumedownload":"https://1drv.ms/b/s!Ah1QarCyTeUtgYQ1eT8jt7pt9Qi5Uw",
+    "social":[
+      {
+        "name":"email",
+        "url":"mailto:hadeel.has97@gmail.com?subject=Email to Hadeel Baabdullah",
+        "className":"fa fa-envelope"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/hadeel-baabdullah/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/Hadeel-Hassan",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "education":[
+      {
+        "school":"King Abdulaziz University",
+        "degree":"Bachelor of Computer Science",
+        "graduated":"Septemper 2015 - March 2020",
+        "description":"Studied computer science major at the faculty of computing and information technology, and was an active member of several clubs. Graduated with the second honors degree with a GPA 4.3 out of 5."
+      }
+    ],
+    "work":[
+      {
+        "company":"Intern Cybersecurity Analyst",
+        "title":"Al-Nefaie Investment Group, Jeddah",
+        "duration":"March 2021 - July 2021",
+        "description":"Worked as an intern cybersecurity analyst (GRC) inside the Cybersecurity department, my main responsibility was to help the cybersecurity department to review and monitor the company's controls and policies. In addition, monitoring the compliance with the regulations of NCA and CMA.",
+        "certificate": "https://1drv.ms/b/s!Ah1QarCyTeUtgYQ0rEpoQVZdwQ7Hjw"
+      },
+      {
+        "company":"Intern Developer",
+        "title":"Saudia Airlines, Jeddah",
+        "duration":"June 2019 - July 2019",
+        "description":"Worked as an intern developer inside the Integration department, where my team and I built a dashboard web page and connect it to the database to show real-time charts and statistics using .NET framework and Microsoft Power BI.",
+        "certificate": "https://1drv.ms/b/s!Ah1QarCyTeUtgYQzQm6WpjWMVpUjYw"
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "skill_icon":"images/python.png"
+      },
+      {
+        "name":"JAVA",
+        "skill_icon":"images/Java.jpg"
+      },
+      {
+        "name":"Javascript ES6",
+        "skill_icon":"images/js.png"
+      },
+      {
+        "name":"React",
+        "skill_icon":"images/reactjs.png"
+      },
+      {
+        "name":"Angular",
+        "skill_icon":"images/angular.png"
+      },
+      {
+        "name":"Flask",
+        "skill_icon":"images/flask.png"
+      },
+      {
+        "name":"CSS",
+        "skill_icon":"images/css.png"
+      },
+      {
+        "name":"HTML",
+        "skill_icon":"images/html.png"
+      },
+      {
+        "name":"REST API",
+        "skill_icon":"images/api.png"
+      },
+      {
+        "name":"SQL/NoSQL",
+        "skill_icon":"images/sql.png"
+      },
+      {
+        "name":"Splunk (SIEM)",
+        "skill_icon":"images/Splunk.jpg"
+      },
+      {
+        "name":"Wireshark",
+        "skill_icon":"images/wireshark.png"
+      }
+    ]
+  }
+}
